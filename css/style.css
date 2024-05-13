@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input, button {
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.head_bar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c68100;
+    color: white;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .container {
+    width: 1024px;
+    border-radius: 8px;
+    margin: 16px;
+    background: #F8F9FA;
+    padding: 16px;
+    flex-grow: 1;
+    height: fit-content;
+    border: 1px solid #f1b749;
+    box-shadow: 0 3px 8px 0 #c68100;
+}
+
+.wrapper .container-header{
+    text-align: center;
+}
+
+.wrapper .container h1{
+    color: #c68100;
+    padding: 20px;
+}
+
+.container .BookShelf{
+    color: #c68100;
+    font-family: 'Quicksand', sans-serif;
+    padding-left: 1%;
+}
+
+.container-content, .container-content1 img{
+    cursor: pointer;
+}
+
+
+.item {
+    border-radius: 16px;
+    margin-top: 16px;
+    padding: 12px 24px 12px 24px;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+
+.item > .inner h5 {
+  color: #c68100;
+}
+
+.item > .inner p {
+    margin-top: 10px;
+    color: rgb(10, 102, 187);
+}
+
+.form {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    height: 450px;
+    border-radius: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 4px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #c68100;
+}
+
+.input_inline label {
+    margin-bottom: 10px;
+    color: #c68100;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.shadow {
+    box-shadow: 0 5px 10px rgba(12, 60, 250, 0.05), 0 15px 40px rgba(192, 22, 16, 0.2);
+}
+
+input[type=text], input[type=date], input[type=number] {
+    font-family: 'Quicksand', sans-serif;
+    background: #F5F1FF;
+    border: 1px solid rgb(10, 102, 187);
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.btn-submit {
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 20px;
+    padding: 12px 10px;
+    border: 2px solid #228da8;
+    color: white;
+    font-size: 20px;
+    align-self: flex-end;
+    cursor: pointer;
+    background-color: rgb(10, 102, 187);
+}
+
+input[type=submit] {
+    margin-top: 30px;
+}
+
+.btn-submit:hover {
+    background: white;
+    color: black;
+}
+
+input[type=text], input[type=date] .btn-submit:focus {
+   color: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+::placeholder{
+    color: black;
+    font-size: 15px;
+}
+
+.container-content{
+    display: flex;
+    align-items: center;
+    padding-bottom: 1%;
+    justify-content: left;
+}
+
+.container-content1{
+   display: flex;
+   align-items: center;
+   justify-content: right;
+   padding-bottom: 1%;
+}
+
+.check-button {
+    background: url('../assets/succses.png');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url('../assets/yes.png');
+    background-size: 100%;
+}
+
+.trash-button {
+    background: url('../assets/bin.png');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    background: url('../assets/bin.png');
+    background-size: contain;
+    width: 45px;
+    height: 45px;
+}
+
+.undo-button {
+    background: url('../assets/kembali.png');
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url('../assets/kembali.png');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+}
+
+.check-button:focus, .trash-button {
+    outline: none;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        margin: 0;
+    }
+
+    .wrapper .container {
+        width: 100%;
+    }
+
+    .list-item {
+        width: 90%;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #df9a1a;
+    text-align: center;
+    font-weight: bold;
+}

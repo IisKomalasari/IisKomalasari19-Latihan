@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookShelf Apps</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="image/MyLogo.png"/>
+</head>
+<body>
+<header class="head_bar">
+    <img src="image/MyLogo.png" alt="MyLogo" height="80px" type="nav" onclick="alert('Selamat Datang di Halaman Bookshelf Apps')">
+    <h1 class="head_bar_title">Bookshelf Apps</h1>
+</header>
+
+<main>
+  <section>
+    <div class="wrapper">
+      <div class="container" id="add-bookshelf">
+        <h1 class="container-header">Masukkan Buku Baru</h1>
+        <form class="form" action="#" id="form">
+          <div class="form-group">
+            <label for="id">Id</label>
+            <input type="number" id="id" name="id" placeholder="Isi dengan angka misal 3221102" required>
+          </div>
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" placeholder="Isi dengan huruf misal Dia" required>
+          </div>
+          <div class="form-group">
+            <label for="author">Author</label>
+            <input type="text" id="author" name="author" placeholder="Isi dengan huruf misal Andi" required>
+          </div>
+          <div class="form-group">
+            <label for="Year">Year</label>
+            <input type="number" id="Year" name="Year" placeholder="Isi dengan angka misal 2000" required>
+          </div>
+          <div class="input_inline">
+            <label for="inputBookIsComplete">Selesai dibaca</label>
+            <input id="inputBookIsComplete" type="checkbox">
+          </div>
+          <input type="submit" value="Masukkan Buku Belum Selesai Di Baca" name="Submit" class="btn-submit">
+        </form>
+      </div>
+
+      <div class="container">
+        <div class="container-content">
+          <img src="image/BelumBaca.png" alt="BelumBaca" height="100px" type="nav" onclick="alert('Upss Kumpulan Buku Belum Selesai Dibaca :(')" >
+          <h2 class="BookShelf">Belum Selesai Dibaca</h2>
+        </div>
+        <div class="list-item" id="bookshelfs">
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="container-content1"> 
+        <h2 class="BookShelf">Selesai Dibaca</h2>
+        <img src="image/SelesaiBaca.png" alt="SelesaiBaca" height="100px" type="nav" onclick="alert('Yeay Buku Sudah Selesai Dibaca :)')">
+        </div>
+        <div class="list-item" id="complete-bookshelfs">
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <marquee behavior="left" direction="">Copyright &copy; 2023 Bookshelf Apps Kabupaten Garut</marquee>
+</footer>
+<script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
+
